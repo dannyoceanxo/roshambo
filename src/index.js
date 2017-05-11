@@ -5,6 +5,8 @@ const $ = s => document.querySelector(s)
 const $$ = s => document.querySelectorAll(s)
 let playerScore = 0
 let computerScore = 0
+// let playerWins = 0
+// let computerWins = 0
 
 const handleButtonClick = (event) => {
   const player = event.target.className
@@ -57,8 +59,10 @@ const resetGame = () => {
   $('body').className = ''
   playerScore = 0
   computerScore = 0
-  $('.scores .player').textContent = playerScore
-  $('.scores .computer').textContent = computerScore
+  // $('.scores .player').textContent = playerScore
+  // $('.scores .computer').textContent = computerScore
+  // playerWins = 0
+  // computerWins = 0
 }
 
 const main = () => {
